@@ -1,0 +1,52 @@
+-- Create a new database called 'model'
+-- Connect to the 'master' database to run this snippet
+USE model
+GO
+-- Create the new database if it does not exist already
+IF NOT EXISTS (
+    SELECT [name]
+        FROM sys.databases
+        WHERE [name] = N'model'
+)
+CREATE DATABASE model
+GO
+
+-- Create a new table called '[Members]' in schema '[dbo]'
+-- Drop the table if it already exists
+IF OBJECT_ID('[dbo].[Members]', 'U') IS NOT NULL
+DROP TABLE [dbo].[Members]
+GO
+-- Create the table in the specified schema
+CREATE TABLE [dbo].[Members]
+(
+    [MemberID] [int] IDENTITY(1,1) NOT NULL,
+    [FirstName] [varchar](50) NULL,
+    [LastName] [varchar](50) NULL,
+    [Email] [varchar](50) NULL,
+    [Country] [varchar](50) NULL,
+    [Created] [datetime] NULL
+    -- Specify more columns here
+)ON [PRIMARY];
+GO
+
+SELECT * FROM Members
+
+-- Create a new table called '[Members]' in schema '[dbo]'
+-- Drop the table if it already exists
+IF OBJECT_ID('[dbo].[Members]', 'U') IS NOT NULL
+DROP TABLE [dbo].[Members]
+GO
+-- Create the table in the specified schema
+CREATE TABLE [dbo].[Members]
+(
+    [ID] [int] IDENTITY(1,1) NOT NULL,
+    [NIM] [varchar](50) NULL,
+    [Nama] [varchar](50) NULL,
+    [Email] [varchar](50) NULL,
+    [Alamat] [varchar](50) NULL,
+    [Created] [datetime] NULL
+    -- Specify more columns here
+)ON [PRIMARY];
+GO
+
+

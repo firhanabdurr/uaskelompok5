@@ -19,7 +19,7 @@ if (!empty($sessData['status']['msg'])) {
 require_once 'dbConfig.php';
 
 // Fetch the data from SQL server 
-$sql = "SELECT * FROM Members ORDER BY MemberID DESC";
+$sql = "SELECT * FROM Mahasiswa ORDER BY ID DESC";
 $query = $conn->prepare($sql);
 $query->execute();
 $members = $query->fetchAll(PDO::FETCH_ASSOC);
