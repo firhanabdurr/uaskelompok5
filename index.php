@@ -47,7 +47,7 @@ $members = $query->fetchAll(PDO::FETCH_ASSOC);
     </div>
 
     <!-- List the members -->
-    <table class="table table-striped table-bordered">
+    <table class="table table-striped table-bordered ml-2">
         <thead class="thead-dark">
             <tr>
                 <th>#</th>
