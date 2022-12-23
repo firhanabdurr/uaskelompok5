@@ -19,7 +19,7 @@ if (!empty($sessData['status']['msg'])) {
 require_once 'dbConfig.php';
 
 // Fetch the data from SQL server 
-$sql = "SELECT * FROM Mahasiswa ORDER BY ID DESC";
+$sql = "SELECT * FROM Member ORDER BY ID DESC";
 $query = $conn->prepare($sql);
 $query->execute();
 $members = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -42,7 +42,7 @@ $members = $query->fetchAll(PDO::FETCH_ASSOC);
         <h5>Mahasiswa</h5>
         <!-- Add link -->
         <div class="float-right">
-            <a href="addEdit.php" class="btn btn-success"><i class="plus"></i> New Member</a>
+            <a href="addEdit.php" class="btn btn-success"><i class="plus"></i> Tambah</a>
         </div>
     </div>
 
