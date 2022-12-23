@@ -39,7 +39,7 @@ $members = $query->fetchAll(PDO::FETCH_ASSOC);
 
 <div class="row">
     <div class="col-md-12 head">
-        <h5>Members</h5>
+        <h5>Mahasiswa</h5>
         <!-- Add link -->
         <div class="float-right">
             <a href="addEdit.php" class="btn btn-success"><i class="plus"></i> New Member</a>
@@ -66,10 +66,10 @@ $members = $query->fetchAll(PDO::FETCH_ASSOC);
                     $count++; ?>
                     <tr>
                         <td><?php echo $count; ?></td>
-                        <td><?php echo $row['FirstName']; ?></td>
-                        <td><?php echo $row['LastName']; ?></td>
+                        <td><?php echo $row['NIM']; ?></td>
+                        <td><?php echo $row['Nama']; ?></td>
                         <td><?php echo $row['Email']; ?></td>
-                        <td><?php echo $row['Country']; ?></td>
+                        <td><?php echo $row['Alamat']; ?></td>
                         <td><?php echo $row['Created']; ?></td>
                         <td>
                             <a href="addEdit.php?id=<?php echo $row['MemberID']; ?>" class="btn btn-warning">edit</a>
@@ -79,7 +79,7 @@ $members = $query->fetchAll(PDO::FETCH_ASSOC);
                 <?php }
             } else { ?>
                 <tr>
-                    <td colspan="7">No member(s) found...</td>
+                    <td colspan="7">Mahasiswa(s) found...</td>
                 </tr>
             <?php } ?>
         </tbody>
