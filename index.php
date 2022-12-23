@@ -79,3 +79,4 @@ $members = $query->fetchAll(PDO::FETCH_ASSOC);
         </tbody>
     </table>
 </div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
