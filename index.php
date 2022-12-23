@@ -19,7 +19,7 @@ if (!empty($sessData['status']['msg'])) {
 require_once 'dbConfig.php';
 
 // Fetch the data from SQL server 
-$sql = "SELECT * FROM Member ORDER BY ID DESC";
+$sql = "SELECT * FROM Members ORDER BY ID DESC";
 $query = $conn->prepare($sql);
 $query->execute();
 $members = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -72,8 +72,8 @@ $members = $query->fetchAll(PDO::FETCH_ASSOC);
                         <td><?php echo $row['Alamat']; ?></td>
                         <td><?php echo $row['Created']; ?></td>
                         <td>
-                            <a href="addEdit.php?id=<?php echo $row['MemberID']; ?>" class="btn btn-warning">edit</a>
-                            <a href="userAction.php?action_type=delete&id=<?php echo $row['MemberID']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete?');">delete</a>
+                            <a href="addEdit.php?id=<?php echo $row['ID']; ?>" class="btn btn-warning">edit</a>
+                            <a href="userAction.php?action_type=delete&id=<?php echo $row['ID']; ?>" class="btn btn-danger" onclick="return confirm('Are you sure to delete?');">delete</a>
                         </td>
                     </tr>
                 <?php }
