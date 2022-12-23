@@ -16,18 +16,18 @@ if (!empty($sessData['status']['msg'])) {
 }
 
 // Get Mahasiswa data 
-$MahasiswaData = $userData = array();
+$MemberData = $userData = array();
 if (!empty($_GET['id'])) {
     // Include database configuration file 
     require_once 'dbConfig.php';
 
     // Fetch data from SQL server by row ID 
-    $sql = "SELECT * FROM Mahasiswas WHERE ID = " . $_GET['id'];
+    $sql = "SELECT * FROM Member WHERE ID = " . $_GET['id'];
     $query = $conn->prepare($sql);
     $query->execute();
-    $MahasiswaData = $query->fetch(PDO::FETCH_ASSOC);
+    $MemberData = $query->fetch(PDO::FETCH_ASSOC);
 }
-$userData = !empty($sessData['userData']) ? $sessData['userData'] : $MahasiswaData;
+$userData = !empty($sessData['userData']) ? $sessData['userData'] : $MemberData;
 unset($_SESSION['sessData']['userData']);
 
 $actionLabel = !empty($_GET['id']) ? 'Edit' : 'Add';
@@ -52,11 +52,11 @@ $actionLabel = !empty($_GET['id']) ? 'Edit' : 'Add';
     <div class="col-md-6">
         <form method="post" action="userAction.php">
             <div class="form-group">
-                <label>First Name</label>
+                <label>NIM</label>
                 <input type="text" class="form-control" name="NIM" placeholder="Enter your first name" value="<?php echo !empty($userData['NIM']) ? $userData['NIM'] : ''; ?>" required="">
             </div>
             <div class="form-group">
-                <label>Last Name</label>
+                <label>Nama</label>
                 <input type="text" class="form-control" name="Nama" placeholder="Enter your last name" value="<?php echo !empty($userData['Nama']) ? $userData['Nama'] : ''; ?>" required="">
             </div>
             <div class="form-group">
@@ -69,7 +69,7 @@ $actionLabel = !empty($_GET['id']) ? 'Edit' : 'Add';
             </div>
 
             <a href="index.php" class="btn btn-secondary">Back</a>
-            <input type="hidden" name="MahasiswaID" value="<?php echo !empty($userData['MahasiswaID']) ? $userData['MahasiswaID'] : ''; ?>">
+            <input type="hidden" name="ID" value="<?php echo !empty($userData['ID']) ? $userData['ID'] : ''; ?>">
             <input type="submit" name="userSubmit" class="btn btn-success" value="Submit">
         </form>
     </div>
