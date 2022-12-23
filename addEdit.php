@@ -52,12 +52,12 @@ $actionLabel = !empty($_GET['id']) ? 'Edit' : 'Add';
     <div class="col-md-6">
         <form method="post" action="userAction.php">
             <div class="form-group">
-                <label>NIM</label>
+                <label>First Name</label>
                 <input type="text" class="form-control" name="NIM" placeholder="Enter your first name" value="<?php echo !empty($userData['NIM']) ? $userData['NIM'] : ''; ?>" required="">
             </div>
             <div class="form-group">
-                <label>Nama/label>
-                    <input type="text" class="form-control" name="Nama" placeholder="Enter your last name" value="<?php echo !empty($userData['Nama']) ? $userData['Nama'] : ''; ?>" required="">
+                <label>Last Name</label>
+                <input type="text" class="form-control" name="Nama" placeholder="Enter your last name" value="<?php echo !empty($userData['Nama']) ? $userData['Nama'] : ''; ?>" required="">
             </div>
             <div class="form-group">
                 <label>Email</label>
@@ -65,13 +65,12 @@ $actionLabel = !empty($_GET['id']) ? 'Edit' : 'Add';
             </div>
             <div class="form-group">
                 <label>Alamat</label>
-                <input type="text" class="form-control" name="Alamat" placeholder="Enter Alamat name" value="<?php echo !empty($userData['Alamat']) ? $userData['Alamat'] : ''; ?>" required="">
+                <input type="text" class="form-control" name="Alamat" placeholder=" Alamat" value="<?php echo !empty($userData['Alamat']) ? $userData['Alamat'] : ''; ?>" required="">
             </div>
 
             <a href="index.php" class="btn btn-secondary">Back</a>
-            <input type="hidden" name="ID" value="<?php echo !empty($userData['ID']) ? $userData['ID'] : ''; ?>">
+            <input type="hidden" name="MahasiswaID" value="<?php echo !empty($userData['MahasiswaID']) ? $userData['MahasiswaID'] : ''; ?>">
             <input type="submit" name="userSubmit" class="btn btn-success" value="Submit">
         </form>
     </div>
 </div>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
