@@ -16,18 +16,18 @@ if (!empty($sessData['status']['msg'])) {
 }
 
 // Get Mahasiswa data 
-$MemberData = $userData = array();
+$MembersData = $userData = array();
 if (!empty($_GET['id'])) {
     // Include database configuration file 
     require_once 'dbConfig.php';
 
     // Fetch data from SQL server by row ID 
-    $sql = "SELECT * FROM Member WHERE ID = " . $_GET['id'];
+    $sql = "SELECT * FROM Members WHERE ID = " . $_GET['id'];
     $query = $conn->prepare($sql);
     $query->execute();
-    $MemberData = $query->fetch(PDO::FETCH_ASSOC);
+    $MembersData = $query->fetch(PDO::FETCH_ASSOC);
 }
-$userData = !empty($sessData['userData']) ? $sessData['userData'] : $MemberData;
+$userData = !empty($sessData['userData']) ? $sessData['userData'] : $MembersData;
 unset($_SESSION['sessData']['userData']);
 
 $actionLabel = !empty($_GET['id']) ? 'Edit' : 'Add';
