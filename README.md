@@ -26,14 +26,14 @@ Driver Microsoft SQL Server untuk PHP memungkinkan Anda untuk mengintegrasikan d
 ![WhatsApp Image 2022-12-24 at 06 28 40](https://user-images.githubusercontent.com/75468041/209426436-54b4c941-ff83-41c6-93fb-2dfa5b402d92.jpeg)
 # 2. Konfigurasi dan Koneksi SQL Server (dbConfig.php)
 
-File dbConfig.phptersebut digunakan untuk menentukan kredensial server SQL dan membuat koneksi dengan server MS SQL menggunakan kelas PDO.
+File dbConfig.php tersebut digunakan untuk menentukan kredensial server SQL dan membuat koneksi dengan server MS SQL menggunakan kelas PDO.
 * $serverName– Nama server SQL
 * $dbUsername– Nama pengguna basis data
 * $dbPassword– Kata sandi pengguna basis data
 * $dbName– Nama basis data
 ![WhatsApp Image 2022-12-24 at 06 32 25](https://user-images.githubusercontent.com/75468041/209426472-07bbe8d1-018f-4ab1-bc7e-ccf57fa9b3a1.jpeg)
 # 3. Operasi CRUD dengan SQL Server (userAction.php)
-File userAction.phpmelakukan operasi CRUD menggunakan PHP dan server database SQL. Blok kode dijalankan berdasarkan tindakan yang diminta.
+File userAction.php melakukan operasi CRUD menggunakan PHP dan server database SQL. Blok kode dijalankan berdasarkan tindakan yang diminta.
 
 # Add/Edit Record:
 Ketika formulir add/edit dikirim dan parameter userSubmit ada di metode $_POST, pointer dimasukkan ke dalam blok kode ini.
@@ -50,7 +50,7 @@ Dalam file index.php, catatan diambil dari server SQL menggunakan PHP dan dicant
 * List data dalam tabel HTML menggunakan PHP.
 * Link Add redirects ke addEdit.php, halaman untuk melakukan operasi Create.
 * Link Edit redirects ke addEdit.php, halaman untuk melakukan operasi Update.
-* Link Delete redirects ke userAction.php, file dengan action_type=deletedan idparams. Dalam userAction.phpfile, catatan dihapus dari server SQL berdasarkan pengidentifikasi unik ( MemberID).
+* Link Delete redirects ke userAction.php, file dengan action_type=delete dan idparams. Dalam userAction.php file, catatan dihapus dari server SQL berdasarkan pengidentifikasi unik ( MemberID).
 ![WhatsApp Image 2022-12-24 at 06 28 05](https://user-images.githubusercontent.com/75468041/209426695-3ab8e719-102f-4b1d-96b5-40f94e22ffae.jpeg)
 # Create & Update Records (addEdit.php)
 addEdit.php berfungsi untuk Create dan Update form.
