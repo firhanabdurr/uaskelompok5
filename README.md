@@ -60,6 +60,10 @@ addEdit.php berfungsi untuk Create dan Update pada form.
 ![WhatsApp Image 2022-12-24 at 06 32 40](https://user-images.githubusercontent.com/75468041/209426855-1284480a-03dd-4a66-98f8-09cd0992f239.jpeg)
 
 # Cara menjalankan Aplikasi
+* Buka aplikasi XAMPP Control Panel
+* Lalu start Action pada modul Apache
+* Setelah itu, Buka browser yang terinstall
+* Terakhir, Masuk ke halaman http://localhost/<nama folder aplikasi dalam htdocs>. misalnya: http://localhost/crud_sqlserver
 
 # Tampilan Aplikasi
 1. Tampilan Awal (Read)
