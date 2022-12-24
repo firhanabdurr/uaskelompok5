@@ -74,4 +74,3 @@ $actionLabel = !empty($_GET['id']) ? 'Edit' : 'Add';
         </form>
     </div>
 </div>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
