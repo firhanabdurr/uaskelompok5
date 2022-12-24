@@ -34,7 +34,7 @@ File dbConfig.php tersebut digunakan untuk menentukan kredensial server SQL dan 
 ![WhatsApp Image 2022-12-24 at 06 32 25](https://user-images.githubusercontent.com/75468041/209426472-07bbe8d1-018f-4ab1-bc7e-ccf57fa9b3a1.jpeg)
 # 3. Operasi CRUD dengan SQL Server (userAction.php)
 File userAction.php melakukan operasi CRUD menggunakan PHP dan server database SQL. Blok kode dijalankan berdasarkan tindakan yang diminta.
-
+![WhatsApp Image 2022-12-24 at 06 32 56](https://user-images.githubusercontent.com/75468041/209426645-beaf7803-d60d-4cfc-b5d3-45a85300ec2a.jpeg)
 # Add/Edit Record:
 Ketika formulir add/edit dikirim dan parameter userSubmit ada di metode $_POST, pointer dimasukkan ke dalam blok kode ini.
 * Ambil nilai dari kolom input menggunakan metode PHP $_POST .
@@ -43,7 +43,7 @@ Ketika formulir add/edit dikirim dan parameter userSubmit ada di metode $_POST, 
 # Hapus Catatan:
 Jika penghapusan diminta dalam action_type, hapus data dari server SQL berdasarkan id yang diteruskan dalam string kueri.
 * Setelah manipulasi data di server MSSQL, status disimpan di SESSION dengan PHP dan dialihkan kembali ke halaman masing-masing.
-![WhatsApp Image 2022-12-24 at 06 32 56](https://user-images.githubusercontent.com/75468041/209426645-beaf7803-d60d-4cfc-b5d3-45a85300ec2a.jpeg)
+
 # Read & Delete Records (index.php)
 Dalam file index.php, records diambil dari server SQL menggunakan PHP dan dicantumkan dalam format tabel dengan opsi Tambah, Edit, dan Hapus.
 * Ambil semua record dari tabel Anggota menggunakan metode prepare(), execute(), dan fetchAll() dari PDO class.
