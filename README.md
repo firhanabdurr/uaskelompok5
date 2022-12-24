@@ -8,7 +8,7 @@ UAS Manajemen Basis Data dan Praktikum Manajemen Basis Data - Kelompok 5 - Tekni
 
 Penjelasan Aplikasi : Aplikasi CRUD dengan Microsoft SQL Server dan PHP
 
-# Cara nstal Microsoft SQL Server PDO Driver (PDO_SQLSRV) untuk PHP (Windows)
+# Cara install Microsoft SQL Server PDO Driver (PDO_SQLSRV) untuk PHP (Windows)
 Driver Microsoft SQL Server untuk PHP memungkinkan Anda untuk mengintegrasikan dan terhubung dengan server SQL dalam aplikasi PHP. Dalam tutorial ini, kami akan menunjukkan cara menginstal dan mengaktifkan Driver MS SQL Server untuk PDO di PHP.
 1. Download driver pada situs berikut https://learn.microsoft.com/en-us/sql/connect/php/download-drivers-php-sql-server?view=sql-server-ver16
 ![image](https://user-images.githubusercontent.com/75468041/209425986-129bc2fa-dd7a-4f95-9f98-a503f3b3a0c2.png)
