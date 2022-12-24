@@ -63,10 +63,10 @@ addEdit.php berfungsi untuk Create dan Update pada form.
 
 # Tampilan Aplikasi
 1. Tampilan Awal (Read)
-![WhatsApp Image 2022-12-23 at 23 06 37](https://user-images.githubusercontent.com/75468041/209427389-3f55164d-bd6f-4933-8c04-107a0dd222b9.jpeg)
+![WhatsApp Image 2022-12-23 at 23 06 37](https://user-images.githubusercontent.com/75468041/209427785-38b4bbdf-a45d-4e40-96d6-486052cde616.jpeg)
 2. Tambah Data (Create)
 ![WhatsApp Image 2022-12-23 at 23 06 49](https://user-images.githubusercontent.com/75468041/209427178-dc3ea61f-fdee-465a-b7c7-db3ebbeaf1dd.jpeg)
 3. Edit Data (Update)
 ![WhatsApp Image 2022-12-24 at 06 35 28](https://user-images.githubusercontent.com/75468041/209427247-93bf6834-d626-420f-8288-5a9cdea6dfeb.jpeg)
 4. Hapus Data (Delete)
-![WhatsApp Image 2022-12-23 at 23 06 37](https://user-images.githubusercontent.com/75468041/209427391-ce89c77a-c09c-4dc7-ab28-89447db8e95e.jpeg)
+![WhatsApp Image 2022-12-23 at 23 06 37](https://user-images.githubusercontent.com/75468041/209427786-49af9362-a3e3-4287-a4bf-0a5db040bb76.jpeg)
