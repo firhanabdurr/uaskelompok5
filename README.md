@@ -35,12 +35,12 @@ File dbConfig.php tersebut digunakan untuk menentukan kredensial server SQL dan 
 # 3. Operasi CRUD dengan SQL Server (userAction.php)
 File userAction.php melakukan operasi CRUD menggunakan PHP dan server database SQL. Blok kode dijalankan berdasarkan tindakan yang diminta.
 ![WhatsApp Image 2022-12-24 at 06 32 56](https://user-images.githubusercontent.com/75468041/209426645-beaf7803-d60d-4cfc-b5d3-45a85300ec2a.jpeg)
-# Add/Edit Record:
+# Add/Edit Records:
 Ketika formulir add/edit dikirim dan parameter userSubmit ada di metode $_POST, pointer dimasukkan ke dalam blok kode ini.
 * Ambil nilai dari kolom input menggunakan metode PHP $_POST .
 * Validasi input data dengan PHP.
 * Jika yang ada MemberID disediakan, perbarui data di server SQL menggunakan metode prepare() dan execute() dari kelas PDO. Jika tidak, masukkan data ke server SQL menggunakan metode PDO class.
-# Hapus Catatan:
+# Delete Records:
 Jika penghapusan diminta dalam action_type, hapus data dari server SQL berdasarkan id yang diteruskan dalam string kueri.
 * Setelah manipulasi data di server MSSQL, status disimpan di SESSION dengan PHP dan dialihkan kembali ke halaman masing-masing.
 
